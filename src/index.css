@@ -5,9 +5,382 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #F7F7F7 0% 0% no-repeat padding-box;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* HEADER  */
+.header {
+  height: 5.5rem;
+}
+
+.navbar-brand p {
+  font-size: 11px;
+}
+
+.navbar-brand i {
+  font-size: 25px;
+}
+
+.navbar-brand img {
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.nav-toggle-button {
+  border: none;
+  color: white;
+}
+
+/* SIDEBAR */
+.sidebar-icons i {
+  font-size: 1.5rem;
+}
+
+.sidebar-icons img {
+  width: 1.5rem;
+}
+
+.sidebar-icons a {
+  color: white;
+  padding: 0.67rem 0;
+}
+
+.sidebar-icons a:hover {
+  color: red;
+}
+
+/* SUMMARY */
+.summary-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+}
+
+.summary-child {
+  width: 100%;
+  height: 13.2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: white;
+  display: grid;
+  /* grid-gap: 0; */
+  justify-items: center;
+  place-items: center;
+}
+
+.summary-child i {
+  font-size: 2rem;
+  color: #6DBCDB;
+  opacity: 1;
+}
+
+.summary-child span {
+  color: #6DBCDB;
+  font-size: 13px;
+  text-align: center;
+}
+
+.summary-child h2 {
+  font-weight: normal;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+/* DASHBOARD */
+.tqm-btn {
+  border-radius: 30px;
+  padding: 0.5rem 4rem;
+  background: linear-gradient(90deg, #E11E25 0%, #D4242A 100%);
+  color: white;
+  float: right;
+  margin: 0 0 1rem 0;
+}
+
+.filter-btn {
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  letter-spacing: 0.6px;
+  color: #707070;
+  opacity: 1;
+  padding: 0.5rem 1rem;
+}
+
+.dash-container {
+  margin-left: 5.5rem;
+}
+
+.dash-wrapper {
+  width: 95%;
+  margin: 2rem auto;
+}
+
+/* CHART  */
+.chart-wrapper {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: white;
+  padding: 1rem;
+}
+
+.chart-wrapper p {
+  font-size: 0.8rem;
+  padding: 0;
+  margin: 0;
+}
+
+/* TOP USERS  */
+.top-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  margin: 2rem 0
+}
+
+.top-child {
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 12px;
+  height: 195px;
+
+}
+
+.top-child-wrapper {
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+.top-tag {
+  background-color: #FAD961;
+  background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
+  width: fit-content;
+  padding: 2px;
+  border-radius: 5px;
+  color: white;
+}
+
+.top-child img {
+  width: 4rem;
+  border-radius: 50%;
+}
+
+.top-child p {
+  margin: 0;
+}
+
+.top-name {
+  display: inline-block;
+  width: 3rem;
+  padding-left: 1rem;
+}
+
+.top-r-tag {
+  padding: 0.5rem 0;
+  font-size: 11px;
+  letter-spacing: 1.65px;
+  color: #707070;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.top-r {
+  font-weight: 700;
+}
+
+/* ACTIVE ORDERS */
+.table {
+  border: none;
+}
+
+.table th {
+  color: rgb(205, 0, 0);
+}
+
+.table td {
+  padding: 1rem;
+}
+
+.orders-wrapper {
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1rem;
+}
+
+.squad {
+  background-color: #FFF27B;
+  color: #809900;
+  border-radius: 25px;
+  padding: 1rem;
+}
+
+.normal {
+  background-color: #FFAFB1;
+  color: red;
+  border-radius: 25px;
+  padding: 1rem;
+}
+
+.customer-cell img {
+  width: 51px;
+  border-radius: 50%;
+}
+
+.customer-cell h1 {
+  font-size: 13px;
+  margin: 0;
+}
+
+.customer-cell p {
+  font-size: 13px;
+  margin: 0;
+  color: #C8C8C8;
+}
+
+.amount-cell {
+  background-color: #82F89D;
+  color: #019B25;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+}
+
+.table i {
+  font-size: 32px;
+}
+
+/* TQM PAGE */
+.tqm-container {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.tqm-container h1 {
+  font-size: 32px;
+  color: #606060;
+  letter-spacing: 0px;
+  margin: 0 0 2rem 0;
+}
+
+.tqm-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 40px;
+}
+
+.tqm-child {
+  background-color: white;
+  /* height: 10rem; */
+  width: 100%;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 25px;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.tqm-child img {
+  width: 93px;
+  margin: 0 0 1rem 0;
+}
+
+.tqm-child h1 {
+  font-size: 32px;
+  color: #606060;
+  letter-spacing: 0px;
+}
+
+.tqm-child p {
+  font-size: 26px;
+  letter-spacing: 0px;
+  color: #606060;
+}
+
+.tqm-btn-1 {
+  background: transparent linear-gradient(300deg, #FCAF3C 0%, #FF9500 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 50px;
+  opacity: 1;
+  border: none;
+  padding: 0.5rem 3rem;
+  color: white;
+}
+
+.tqm-btn-2 {
+  background: transparent linear-gradient(322deg, #FFEF5D 0%, #F9C210 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 50px;
+  opacity: 1;
+  color: white;
+
+  border: none;
+  padding: 0.5rem 3rem;
+}
+
+.tqm-btn-3 {
+  background: transparent linear-gradient(355deg, #82F89D 0%, #46C864 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 50px;
+  opacity: 1;
+  border: none;
+  padding: 0.5rem 3rem;
+  color: white;
+}
+
+.tqm-btn-4 {
+  background: transparent linear-gradient(300deg, #E11E25 0%, #D4242A 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 50px;
+  opacity: 1;
+  border: none;
+  padding: 0.5rem 3rem;
+  color: white;
+}
+
+.tqm-btn-5 {
+  background: transparent linear-gradient(300deg, #FCAF3C 0%, #FF9500 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 50px;
+  opacity: 1;
+  border: none;
+  padding: 0.5rem 3rem;
+  color: white;
+}
+
+.tqm-quality-btn {
+  background: #E11E25 0% 0% no-repeat padding-box;
+  border-radius: 50px 0px 0px 50px;
+  opacity: 1;
+  color: white;
+  width: 10rem;
+}
+
+.tqm-performance-btn {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 0px 50px 50px 0px;
+  opacity: 1;
+  color: black;
+  width: 10rem;
+
+}
+
+.tqm-edit-btn{
+  float: right;
+  border-radius: 50%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+}
+.search-container{
+  height: 5rem;
+}
+.search-wrapper{
+  width: 30%;
+  float: right;
+  margin: 2rem 0;
+}
+
+.qtm-calendar-btn{
+  margin: 0 1rem 0 0;
 }
