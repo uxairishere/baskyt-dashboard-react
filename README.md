@@ -1,3 +1,8 @@
+# Project is made using React Js | Bootstrap 5.2 | JS | CSS3
+## Preview
+<img src="demo1.png" width="100%"/>
+<hr/>
+<img src="demo2.png" width="100%"/>
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
