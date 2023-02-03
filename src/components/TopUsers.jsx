@@ -3,7 +3,7 @@ import React from 'react'
 const TopUsers = () => {
     var user = {
         img: require('../assets/profile2.jpg'),
-        name: 'Christina Ambrosia',
+        name: 'Uzair Abbas',
         revenue: '13416.80',
         rev_status: '12%',
         total_spent: '49137',
@@ -35,7 +35,7 @@ const TopUsers = () => {
                 </div>
                 {/* CARD */}
                 <div className='top-child'>
-                    <div className='top-tag'>Top Customer</div>
+                    <div className='top-tag'>Top Rider</div>
                     <div className='top-child-wrapper'>
                         <div className='row'>
                             <div className='col-6'>
@@ -56,7 +56,7 @@ const TopUsers = () => {
                 </div>
                 {/* CARD */}
                 <div className='top-child'>
-                    <div className='top-tag'>Top Customer</div>
+                    <div className='top-tag'>Top Rider</div>
                     <div className='top-child-wrapper'>
                         <div className='row'>
                             <div className='col-6'>
