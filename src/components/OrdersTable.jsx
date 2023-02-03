@@ -1,92 +1,7 @@
 import React from 'react'
 
-const OrdersTable = () => {
-    var orders = [
-        {
-            order_number: 1,
-            type: 'squad',
-            customer: "John Doe",
-            zip_code: 46000,
-            order_time: '3:12 PM',
-            vendors: '',
-            rider: 'Bill Cohen',
-            order_amount: 144,
-            performance: 'poor',
-            address: 'Morgah, Rawalpindi',
-            phone: '+923085100827',
-            img: require('../assets/profile.jpg')
-        },
-        {
-            order_number: 1,
-            type: 'normal',
-            customer: "John Doe",
-            zip_code: 46000,
-            order_time: '3:12 PM',
-            vendors: '',
-            rider: 'Bill Cohen',
-            order_amount: 144,
-            performance: 'good',
-            address: 'Morgah, Rawalpindi',
-            phone: '+923085100827',
-            img: require('../assets/profile.jpg')
-        }, 
-        {
-            order_number: 1,
-            type: 'squad',
-            customer: "John Doe",
-            zip_code: 46000,
-            order_time: '3:12 PM',
-            vendors: '',
-            rider: 'Bill Cohen',
-            order_amount: 144,
-            performance: 'top',
-            address: 'Morgah, Rawalpindi',
-            phone: '+923085100827',
-            img: require('../assets/profile.jpg')
-        },
-        {
-            order_number: 1,
-            type: 'squad',
-            customer: "John Doe",
-            zip_code: 46000,
-            order_time: '3:12 PM',
-            vendors: '',
-            rider: 'Bill Cohen',
-            order_amount: 144,
-            performance: 'poor',
-            address: 'Morgah, Rawalpindi',
-            phone: '+923085100827',
-            img: require('../assets/profile.jpg')
-        },
-        {
-            order_number: 1,
-            type: 'squad',
-            customer: "John Doe",
-            zip_code: 46000,
-            order_time: '3:12 PM',
-            vendors: '',
-            rider: 'Bill Cohen',
-            order_amount: 144,
-            performance: 'good',
-            address: 'Morgah, Rawalpindi',
-            phone: '+923085100827',
-            img: require('../assets/profile.jpg')
-        },
-        {
-            order_number: 1,
-            type: 'squad',
-            customer: "John Doe",
-            zip_code: 46000,
-            order_time: '3:12 PM',
-            vendors: '',
-            rider: 'Bill Cohen',
-            order_amount: 144,
-            performance: 'top',
-            address: 'Morgah, Rawalpindi',
-            phone: '+923085100827',
-            img: require('../assets/profile.jpg')
-        },  
-    ]
+const OrdersTable = (props) => {
+    
     return (
         <div className='orders-container'>
             <h5>Active Orders</h5>
@@ -105,7 +20,7 @@ const OrdersTable = () => {
                             <th scope="col">Performance</th>
 
                         </tr>
-                        {orders.map((val, index) => (
+                        {props.orders.map((val, index) => (
                             <tr>
                                 {val.type == 'squad' ?
                                     <td scope="row">

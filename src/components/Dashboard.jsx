@@ -3,6 +3,8 @@ import Summery from './Summery'
 import Chart from './Chart'
 import TopUsers from './TopUsers'
 import OrdersTable from './OrdersTable'
+import {orders} from '../data/orders.data.js'
+import { summery } from '../data/summery.data'
 
 const Dashboard = () => {
     return (
@@ -10,12 +12,12 @@ const Dashboard = () => {
             <div className='dash-wrapper'>
                 <div className='dash-top-wrapper row'>
                     <div>
-                        <button className='btn tqm-btn'>TQM</button>
+                        <a href='/tqm' className='btn tqm-btn'>TQM</a>
                         <button className='btn filter-btn'>Fiter By</button>
 
                     </div>
                     <div className='col-6'>
-                        <Summery />
+                        <Summery summery={summery}/>
                     </div>
                     <div className='col-6'>
                         <Chart />
@@ -25,7 +27,7 @@ const Dashboard = () => {
                 <TopUsers/>
                 </div>
                 <div className='dast-bottom-wrapper'>
-                <OrdersTable/>
+                <OrdersTable orders={orders}s/>
                 </div>
             </div>
         </div>

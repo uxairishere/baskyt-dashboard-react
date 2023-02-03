@@ -2,7 +2,7 @@ import React from 'react'
 
 const TopUsers = () => {
     var user = {
-        img: require('../assets/profile.jpg'),
+        img: require('../assets/profile2.jpg'),
         name: 'Christina Ambrosia',
         revenue: '13416.80',
         rev_status: '12%',

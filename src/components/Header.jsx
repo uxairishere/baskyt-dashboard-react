@@ -4,8 +4,8 @@ import profile2 from '../assets/profile2.jpg'
 const Header = () => {
     return (
         <div>
-            <nav class="navbar header navbar-dark bg-dark" aria-label="First navbar example">
-                <div class="container-fluid ">
+            <nav class="navbar header navbar-dark header-main" aria-label="First navbar example">
+                <div class="container-fluid header-fluid">
                     <a class="navbar-brand text-center" href="#">
                         <i class="bi bi-basket2"></i>
                         <p>Baskyt&#8482;</p>
@@ -18,19 +18,19 @@ const Header = () => {
                     <a class="navbar-brand" href="#"><img src={profile2} alt="..."/></a>
 
 
-                    <div class="navbar-collapse collapse bg-dark" id="navbarsExample01">
+                    <div class="navbar-collapse collapse header-collapase" id="navbarsExample01">
                         <ul class="navbar-nav me-auto mb-2">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="/">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link" href="/">Dashboard</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link disabled">Disabled</a>
+                                <a class="nav-link text-danger">TQM</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">More</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Action</a></li>
                                     <li><a class="dropdown-item" href="#">Another action</a></li>
