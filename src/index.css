@@ -49,6 +49,9 @@ code {
 /* SIDEBAR */
 .sidebar-main{
   background-color: #283848;
+  width: 4.5rem; 
+  height:95rem;
+  float: left;
 }
 .sidebar-icons i {
   font-size: 1.5rem;
@@ -253,6 +256,10 @@ code {
   color: #C8C8C8;
 }
 
+.vendor-img{
+  width: 60px;
+}
+
 .amount-cell {
   background-color: #82F89D;
   color: #019B25;
@@ -423,3 +430,31 @@ code {
   border-radius: 12px;
 }
 
+/* MOBILE VIEW  */
+
+
+@media (max-aspect-ratio: 3/2) {
+  /* SUMMARY */
+  .summary-wrapper {
+    grid-template-columns: auto auto;
+    gap: 5px;
+  }
+  .summary-child{
+    width: 95%;
+    height: 8rem;
+  }
+  /* TOP USERS */
+  .top-wrapper {
+    display: block;
+  }
+  .top-child{
+    margin: 0 0 1rem 0;
+
+  }
+  /* CHART */
+  .chart-container{
+    padding: 0;
+    margin: 1rem 0 0 0;
+    width: 97.5%;
+  }
+}

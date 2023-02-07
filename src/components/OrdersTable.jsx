@@ -1,7 +1,12 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 
 const OrdersTable = (props) => {
-    
+    const [orders, setOrders] = useState([]);
+    console.log("PROP ORDER: " + orders)
+    useEffect(() => {
+        setOrders(props.orders)
+    },[])
+
     return (
         <div className='orders-container'>
             <h5>Active Orders</h5>
@@ -39,7 +44,7 @@ const OrdersTable = (props) => {
                                 <td>
                                     <div className='row customer-cell'>
                                         <div className='col-3'>
-                                            <img src={val.img} alt="..."/>
+                                            <img src={process.env.REACT_APP_NODE_SERVER + val.img} alt="..."/>
                                         </div>
                                         <div className='col-9'>
                                             <h1>{val.customer}</h1>
@@ -51,7 +56,9 @@ const OrdersTable = (props) => {
                                 </td>
                                 <td>{val.zip_code}</td>
                                 <td>{val.order_time}</td>
-                                <td>{val.vendors}</td>
+                                <td>
+                                <img className='vendor-img' src={process.env.REACT_APP_NODE_SERVER + val.vendors} alt="..."/>
+                                </td>
                                 <td>{val.rider}</td>
                                 <td>
                                     <span className='amount-cell' style={{backgroundColor: '#82F89D',padding: '0.5rem 1.5rem'}}>

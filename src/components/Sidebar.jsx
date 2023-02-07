@@ -5,7 +5,7 @@ import bonus from '../assets/bonus.svg'
 
 const Sidebar = () => {
     return (
-        <div class="d-flex flex-column flex-shrink-0 sidebar-main" style={{ width: '4.5rem', height: '95rem', float: 'left' }}>
+        <div class="d-flex flex-column flex-shrink-0 sidebar-main">
             <ul class="nav nav-pills sidebar-icons nav-flush flex-column mb-auto text-center">
                 <li class="nav-item">
                     <a href="/" class="nav-link text-danger rounded-0" aria-current="page" data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Home" data-bs-original-title="Home">

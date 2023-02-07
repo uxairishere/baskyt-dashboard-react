@@ -42,7 +42,7 @@ const Chart = () => {
     return (
         <div>
             <div className='chart-wrapper'>
-                <ReactApexCharts options={info.options} series={info.series} type="line" height={350} />
+                <ReactApexCharts options={info.options} series={info.series} type="line" className="chart-comp" height={350} />
                 <div className='row text-center'>
                 <div className='col-md-4'>
                     <p>Weekly Users</p>

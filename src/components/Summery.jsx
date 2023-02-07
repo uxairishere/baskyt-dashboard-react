@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import revenue from '../assets/revenue.svg'
 
 const Summery = (props) => {

@@ -1,4 +1,4 @@
-export const summery = {
+export const summerydata = {
     customers: 7340,
     orders: 12907,
     delivery: 12907,
